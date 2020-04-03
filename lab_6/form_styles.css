@@ -1,0 +1,57 @@
+html {
+    background-color:lightgrey;
+}
+
+h1 {
+    display:flex;
+    justify-content:center;
+    font-weight:bold;
+    font-style: arial;
+}
+
+.wrapper {
+    display:flex;
+    justify-content:center;
+}
+
+
+form {
+    margin:0;
+    width:400px;
+    padding:1em;
+    
+
+}
+
+label {
+    display:flex;
+    justify-content:flex-start;
+    width:90px;
+    font-size:18pt;
+
+}
+
+input, textarea {
+    font: 1em sans-serif;
+    width:300px;
+    box-sizing:border-box;
+    border: 1px solid #999;
+
+    
+}
+
+ul {
+    list-style:none;
+    padding:5;
+    margin:0;
+
+}
+
+button {
+    font-size:12pt;
+    background-color:orange;
+    border-radius: 2em;
+    border: 1px solid darkorange;
+    height:30px;
+    width:100px;
+}
