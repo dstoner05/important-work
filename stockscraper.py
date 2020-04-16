@@ -1,4 +1,5 @@
 import smtplib, ssl
+import time
 from bs4 import BeautifulSoup as bs
 import re
 import urllib.request
@@ -107,23 +108,6 @@ while True:
     pricechange2=re.findall("\d+\.\d+", pricechange1)
     pricechange3=pricechange2[0]
     pricechange4=float(pricechange3)
-    #for loop prevents while loop from stopping after notification is sent#
-    for price in price:
-
-        if price3 < 135:
-            server.send_message(msg3)
-            print(price)
-            break
-    
-        if pricechange4 > 4 and posneg != None:
-            server.send_message(msg2)
-            print(pricechange4, "Positive")
-            break
-
-        elif pricechange4 > 4 and posneg == None:
-            server.send_message(msg4)
-            print(pricechange4, "Negative")
-            break
 
     cost=mydiv1.string
     cost1=re.findall("\d+\.\d+", cost)
@@ -134,24 +118,6 @@ while True:
     costchange3=costchange2[0]
     costchange4=float(costchange3)
 
-    #for loop prevents while loop from stopping after notification is sent#
-    for cost in cost:
-
-        if cost3 < 3.5:
-            server.send_message(msg5)
-            print(cost)
-            break
-    
-        if costchange4 > 4 and posneg1 != None:
-            server.send_message(msg)
-            print(costchange4, "Positive")
-            break
-
-        elif costchange4 > 4 and posneg1 == None:
-            server.send_message(msg1)
-            print(costchange4, "Negative")
-            break
-
     a=mydiv2.string
     a1=re.findall("\d+\.\d+", a)
     a2=a1[0]
@@ -161,22 +127,68 @@ while True:
     achange3=achange2[0]
     achange4=float(achange3)
 
+    
+    def timedprinter():
+        print("Mircrosoft's Price is now" , price)
+        print("Everi's Price is now" , cost)
+        print("ARCT's Price is now" , a)
+        time.sleep(60)
+
+    while True:
+        timedprinter()
+
+    #for loop prevents while loop from stopping after notification is sent#
+    for price in price:
+
+        if price3 < 135:
+            server.send_message(msg3)
+            print("Microsoft's Price is ", price)
+            break
+    
+        if pricechange4 > 4 and posneg != None:
+            server.send_message(msg2)
+            print("microsoft has increased by ", pricechange4, "percent")
+            break
+
+        elif pricechange4 > 4 and posneg == None:
+            server.send_message(msg4)
+            print("microsoft has decreased by ", pricechange4, "percent")
+            break
+
+    #for loop prevents while loop from stopping after notification is sent#
+    for cost in cost:
+
+        if cost3 < 3.5:
+            server.send_message(msg5)
+            print("Everi's Price is ", cost)
+            break
+    
+        if costchange4 > 4 and posneg1 != None:
+            server.send_message(msg)
+            print("Everi's Price increased by " ,costchange4, "Percent")
+            break
+
+        elif costchange4 > 4 and posneg1 == None:
+            server.send_message(msg1)
+            print("Everi's Price decreased by " ,costchange4, "Percent")
+            break
+
     #for loop prevents while loop from stopping after notification is sent#
     for a in a:
 
         if a3 < 13:
             server.send_message(msg6)
-            print(a)
+            print("ARCT's Price is " , a)
             break
     
         if achange4 > 4 and posneg2 != None:
             server.send_message(msg7)
-            print(achange4, "Positive")
+            print("ARCT's price increased by " ,achange4, "percent")
             break
 
         elif achange4 > 4 and posneg2 == None:
             server.send_message(msg8)
-            print(achange4, "Negative")
+            print("ARCT's price decreased by " ,achange4, "percent")
             break
 
     #allows the user to manually break the while loop#
