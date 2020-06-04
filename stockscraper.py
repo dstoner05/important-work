@@ -129,13 +129,10 @@ while True:
 
     
     def timedprinter():
-        print("Mircrosoft's Price is now" , price)
-        print("Everi's Price is now" , cost)
-        print("ARCT's Price is now" , a)
+        print("Mircrosoft's Price is now" , price, "!")
+        print("Everi's Price is now" , cost, "!")
+        print("ARCT's Price is now" , a, "!")
         time.sleep(60)
-
-    while True:
-        timedprinter()
 
     #for loop prevents while loop from stopping after notification is sent#
     for price in price:
@@ -190,9 +187,10 @@ while True:
             server.send_message(msg8)
             print("ARCT's price decreased by " ,achange4, "percent")
             break
+    
+    timedprinter()
 
     #allows the user to manually break the while loop#
     input1=input("type 'break' to end ")
     if input1 == "break":
         break
-
