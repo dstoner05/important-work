@@ -1,0 +1,90 @@
+<Doctype HTML>
+    <head>
+        <meta charset="utf-8">
+        <title>Dalton's Online Resume</title>        
+        <html lang= "en">       
+        <link rel="stylesheet" href = "style1.css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:700&display=swap" rel="stylesheet">
+    </head> 
+    <body> 
+        <div class = "header">
+            <div class = "one">
+                <h1>Dalton Stoner</h1>
+            </div>
+            <div class = "navigation">
+                <ul>
+                    <div class="tabs">
+                        <div class="tab1">
+                            <!-- <li><a href="index.html">Home</a></li> -->
+                            <button id="myButton" class="submit-button" >Home</button>
+                        </div>
+                        <div class="tab2">
+                            <!-- <li><a href="experience.html">Experience</a></li> -->
+                            <button id="expbutton" class="submit-button" >Work Experience</button>
+                        </div>
+                        <div class="tab3">
+                            <!-- <li><a href="references.html">References</a></li> -->
+                            <button id="refbutton" class="submit-button" >References</button>
+                        </div>
+                        <div class="tab4">
+                            <button id="leadbutton" class="submit-button" >Leadership & Achievements</button>
+                            <!-- <li><a href="leadership.html">Leadership</a></li> -->
+                        </div>
+                        <div class="tab5">
+                            <button id="relexpbutton" class="submit-button" >Related Experience</button>
+                            <!-- <li><a href="work-experience.html">Jobs</a></li> -->
+                        </div>
+                    </div>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="wrapper">
+                <div class="experience">
+                    <h2>Here are a few of the notable things I have worked on:</h2>
+                    <ul>
+                        <li>Worked in numerous webpage application projects</li>
+                        <li>Worked with MySQL to create a working database of Super Smash Bros. data.</li>
+                        <li>Worked with Mapbox as showcased in Lab_7</li>
+                        <li>Have done numerous projects working with Python</li>
+                        <li>Created an online platform for my resume to be showcased</li>
+                    </ul>
+                    <h2>Here are a few of the programs that I am familiar with:</h2>
+                    <ul>
+                        <li>Python</li>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>Javascript</li>
+                        <li>Tableau data visualization software</li>
+                        <li>MySQL and MySQLite</li>
+                        <li>Github</li>
+                        <li>Visual Studio Code Integrated Development Environment</li>
+                        <li>Node.js</li>
+                        <li>Microsoft Office</li>
+
+                    </ul>
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script type="text/javascript">
+        document.getElementById("myButton").onclick = function () {
+            location.href = "index.html"; 
+        };
+        document.getElementById("expbutton").onclick = function () {
+            location.href = "experience.html"; 
+        };
+        document.getElementById("refbutton").onclick = function () {
+            location.href = "references.html"; 
+        };
+        document.getElementById("leadbutton").onclick = function () {
+            location.href = "leadership.html"; 
+        };
+        document.getElementById("relexpbutton").onclick = function () {
+            location.href = "work-experience.html";
+        };
+    </script>
+</Doctype>    

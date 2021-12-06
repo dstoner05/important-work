@@ -1,0 +1,246 @@
+@font-face {
+    font-family: "CustomFont";
+    src: url("ubuntu-n1m0-webfont.woff")format("woff");
+}
+
+body {
+    font-family: "CustomFont";
+}
+
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.navigation {
+    position:fixed;
+    display:inline-block;
+    width:20%;
+    height:100%;
+    vertical-align: top;
+    background-color: black;
+    opacity: 75%;
+    text-align: center;
+}
+
+.box {
+    display: inline-block;
+    vertical-align: top;
+    width:70%;
+    height:fit-content;
+    margin-left: 25%;
+    margin-top:5%;
+    background-color:#ededeb;
+    text-align:center;
+    border-radius:2px;
+}
+
+img {
+    height:500px;
+}
+
+.name {
+    color:white;
+    border-style:solid;
+    margin-top:15%;
+    border-width:5px;
+    border-color: white;
+    text-align:center;
+    border-radius:2px;
+}
+
+ul {
+    text-align:center;
+    padding-left: 0px;
+}
+
+.text {
+    display: inline-block;
+    width: 50%;
+    margin-left:50px;
+    vertical-align: center;
+}
+
+.img1 {
+    margin-top:10%;
+    display: inline-block;
+    vertical-align: center;
+}
+
+.title {
+    color:white;
+    margin-top:10px;
+    margin-bottom:15%;
+}
+
+.submit-button {
+    font-family: "CustomFont";
+    font-size:22;
+    background-color: black;
+    border-top:black;
+    border-left:black;
+    border-right:black;
+    /* border-bottom:white; */
+    color:white;
+}
+
+/* .tabs {
+    border-style:solid;
+    border-bottom:white;
+    border-width:5;
+} */
+
+.tab, .tab1, .tab2, .tab3, .tab4, .tab5, .tab6 {
+    text-align:left;
+    margin-top:10px;
+    margin-bottom: 20px;
+    margin-left:2px;
+    /* border-style:solid;
+    border-width:2px;
+    background-color:black;
+    border-bottom:white; */
+
+}
+
+.tabs {
+    margin-bottom: 30%;
+}
+
+h1.detail {
+    font-weight: 500;
+    font-size:50;
+    color:black;
+    border-bottom:#2e3cff;
+    border-style:solid;
+    border-top:#ededeb;
+    border-left:#ededeb;
+    border-right:#ededeb;
+}
+
+span.intro{ 
+    font-weight: 500;
+    font-size:50;
+    color:#2e3cff;
+}
+
+
+.aboutme {
+    font-size:20;
+}
+
+.download-button {
+    font-family: "CustomFont";
+    background-color:black;
+    border-color: black;
+    color:white;
+    font-size:20;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+.button-wrapper {
+    border-style:solid;
+    border-color:white;
+    border-width:2px;
+    margin-top:10px;
+    margin-bottom:10px;
+    border-radius:2px;
+}
+
+
+.education {
+    margin-top:15%;
+    padding-top:30px;
+    border-style:solid;
+    border-top:2px solid black;
+    border-left: none;
+    border-right:none;
+    border-bottom: none;
+}
+
+.work-experience {
+    margin-top:30%;
+    padding-top:30px;
+    font-size: 20;
+    border-style:solid;
+    border-top:2px solid black;
+    border-left: none;
+    border-right:none;
+    border-bottom: none;
+
+
+}
+li {
+    list-style:none;
+    padding-left:10px;
+    padding-right:10px;
+}
+
+.relexperience {
+    margin-top:15%;
+    padding-top:30px;
+    border-style:solid;
+    border-top:2px solid black;
+    border-left: none;
+    border-right:none;
+    border-bottom: none;
+}
+
+.img3 {
+    height:150;
+}
+
+
+.references {
+    font-size: 25;
+    margin-top:15%;
+    padding-top:30px;
+    border-style:solid;
+    border-top:2px solid black;
+    border-left: none;
+    border-right:none;
+    border-bottom: none;
+}
+
+.leadership {
+    margin-top:30%;
+    padding-top:30px;
+    border-style:solid;
+    border-top:2px solid black;
+    border-left: none;
+    border-right:none;
+    border-bottom: none;
+}
+
+.snippet {
+    margin-top:20%;
+    padding-top:30px;
+    border-style:solid;
+    border-top:2px solid black;
+    border-left: none;
+    border-right:none;
+    border-bottom: none;
+    font-size: 40;
+    padding-left:10px;
+    padding-right:10px;
+}
+
+@media only screen and (max-width:680px) {
+
+    .wrapper {
+        max-width:300px;
+        max-height:480px;
+    }
+    .text {
+        max-width:340px;
+    }
+    .img1 img {
+        max-width: 180px;
+    }
+}

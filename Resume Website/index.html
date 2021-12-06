@@ -1,0 +1,317 @@
+<Doctype HTML>
+<head>
+    <meta charset="utf-8">
+    <title>Dalton's Online Resume</title>        
+    <html lang= "en">       
+    <link rel="stylesheet" href = "style.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600&display=swap" rel="stylesheet">
+    
+</head> 
+<body> 
+    
+    <div class="container">
+        <div class="wrapper">
+            <span class="navigation">
+                <div class = "name">
+                    <h1>Dalton Stoner</h1>
+                </div>
+                <div class = "title">
+                    <h2>Software Engineer</h2>
+                </div>
+                <ul>
+                    <div class="tabs">
+                        <div class="tab1">
+                            <!-- <li><a href="index.html">Home</a></li> -->
+                            <button id="myButton" class="submit-button" >>Home</button>
+                        </div>
+                        <div class="tab">
+                            <!-- <li><a href="experience.html">Experience</a></li> -->
+                            <button id="edubutton" class="submit-button" >>Education</button>
+                        </div>
+                        <div class="tab2">
+                            <!-- <li><a href="experience.html">Experience</a></li> -->
+                            <button id="expbutton" class="submit-button" >>Work Experience</button>
+                        </div>
+                        <div class="tab5">
+                            <button id="relexpbutton" class="submit-button" >>Related Experience</button>
+                            <!-- <li><a href="work-experience.html">Jobs</a></li> -->
+                        </div>
+                        <div class="tab3">
+                            <!-- <li><a href="references.html">References</a></li> -->
+                            <button id="refbutton" class="submit-button" >>References</button>
+                        </div>
+                        <div class="tab4">
+                            <button id="leadbutton" class="submit-button" >>Leadership & Achievements</button>
+                            <!-- <li><a href="leadership.html">Leadership</a></li> -->
+                        </div>
+                        <div class="tab6">
+                            <button id="portfoliobutton" class="submit-button" >>Portfolio</button>
+                            <!-- <li><a href="work-experience.html">Jobs</a></li> -->
+                        </div>
+                    </div>
+                </ul>
+                <div class=button-wrapper>
+                    <a href="cv.docx" download="apple">
+                        <button id="down-button" type="button", class="download-button">Download my Resume!</button> 
+                    </a> 
+                </div>
+            </span>
+            <span class="box">
+                <div class="img1">
+                    <img src="selfimg.JPG" alt="A photo of me" id="img1" max-height:550px;>
+                </div>
+                <!-- <span id="typed"></span>
+                <div class="typed-strings">
+                    <p>Hello! I'm Dalton </p>
+                    <p>Welcome to my <span class="highlight">resume</span></p>
+                    <p>I am a student at the <span class="highlight red">University of Maryland</span></p>
+                    <p>I am excited to show you my work!</p>
+                </div> -->
+                
+                <div  class="text">
+                    <div class="hello">
+                        <h1 class="detail">Hi, I'm <span class="intro">Dalton Stoner!</span></h1>
+                    </div>
+                    <div class="aboutme">
+                        <h3>Welcome to my resume in the form of a webpage!</h3>
+                        <p><strong>Phone:</strong> 443-988-9986</p>
+                        <p><strong>Email:</strong> Dstoner05@gmail.com</p>
+                        <p><strong>Preferred Contact:</strong> Email or Call</p>
+                        <p>I am a Software Engineer currently working for ITCurves in Gaithersburg, MD. I love learning new languages and exploring new projects. I have experience in software development as well as data science.</p>
+                    </div>
+                </div>
+                <div class="education" id="edutext">
+                    <p>I received a Bachelor of Science in Information Science from The University of Maryland, College Park in 2020.</p>
+                </div> 
+                <div class="img2">
+                    <img src="umd.jpg" alt="UMD Logo" id="img2">
+                </div>
+                
+                <div class="work-experience" id = "work-experience">
+                    <span class = "workheader" id="workheader"><h2>Work Experience</h2></span>
+                    <p><strong>2020-Present:</strong> ITCurves</p>
+                    <p><strong>Data Analyst/ Software Engineer</strong></p>
+                    <p>Notable Achievements:</p>
+                    <p>Developed multiple software projects using python for both clients and in-house operations</p>
+                    <p>Utilized Microsoft Power Bi to analyze client and company data to quantify and display business operations</p>
+                    <p>Manage a group of developers for software development projects</p>
+                    <p>Created a facial recognition system for use in in-house operations</p>
+                    <p>Analyzing data using mathematical/statistical methods</p>
+                    <p>Develop analytic plans, engineer supporting algorithms, and design and implement solutions which execute analytic plans</p>
+                </div>
+                <img src="itclogo.png" alt="ITCurves Logo" id="img3">
+            
+                <div class="relexperience" id="relexperience">
+                    <strong>Fall 2020: Created User Guide and Example Data Cleaning and Analysis for CDC Dataset </strong>
+                    <ul><li>Uncovering and exploring anomalous data</li></ul>
+                    <ul><li>Created a user guide to help users understand CDC open dataset</li></ul>
+                    <ul><li>Created sample data visualizations for users</li></ul>
+                    <ul><li>Worked with a team to deliver an extensive user guide, and sample data cleaning and analyses</li></ul>
+                    <strong>April 2020: Webscraper with email alerts </strong>
+                    <ul><li>Python application utilizing Beautifulsoup, Email.Mime</li></ul>
+                    <ul><li>Developed a webscraping application for stock prices to notify the user when the stock fluctuates a certain percentage amount</li></ul>
+                    <ul><li>Program monitors multiple stocks and sends different messages based on fluctuations in any of the stocks being monitored</li></ul>
+                    <strong>November 2020: Random Password Generator </strong>
+                    <ul><li>Created script that makes any length random password with random number of uppercase and lowercase letters, numbers, and special characters, based on a given length input </li></ul>
+                    <ul><li>Saves the passwords to a file, and they are encrypted when saved</li></ul>
+                    <ul><li>Located in Github repository under Python Development Work</li></ul>
+                </div>
+                <div class="pbireport">
+                    <iframe width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiMDI3ZGY0M2ItYzUyMC00MjllLWI3YWEtYjIwZjMzYmM2MjEzIiwidCI6IjIyZjZhMjZmLWE3YzUtNDEwZi1hNzRlLTA0ODU4NjdhODQ4NSIsImMiOjF9&pageName=ReportSectionca897b9508803a9081a4" frameborder="0" allowFullScreen="true"></iframe>
+                </div>
+                <div class="references" id="references">
+                    <ul>
+                        <li><h2>Professional References:</h2></li>
+                        <ul>
+                            <li>Howard Nievod</li>
+                            <ul>
+                                <li><Strong>Email:</Strong> sales@printinkonline.com</li>
+                                <li><strong>Phone:</strong> 443-506-6552</li>
+                                <li>Howard has been my boss at PrintInk for 7 years</li>
+                            </ul>
+                        </ul>
+                        <h2>Personal References</h2>
+                        <ul>
+                            <li>Natalie Baker</li>
+                            <ul>
+                                <li><strong>Phone:</strong> 443-988-3234</li>
+                                <li><strong>Email:</strong> nataliebaker2465@gmail.com</li>
+                                <li>Natalie has been my peer for 6 years and she knows first hand my work ethic and drive</li>
+                            </ul>
+                            <li>Huntor Ross</li>
+                            <ul>
+                                <li><strong>Phone:</strong> 443-608-8989</li>
+                                <li><strong>Email:</strong> hross2@citadel.edu</li>
+                                <li>Huntor has been my friend for over 13 years and can attest to my skills and drive towards this career</li>
+                            </ul>
+                        </ul>
+                    </ul>
+                </div>
+                <div class="leadership" id="leadership">
+                    <h2>Leadership Experience</h2>
+                        <ul>
+                            <li>Obtained the rank of Eagle Scout in 2013</li>
+                            <li>Held various leadership positions within my scouting troop throughout scouts</li>
+                            <li>Throughout highschool I was a member of the National Honor Society</li>
+                            <li>Was awarded the Presidential Award of Academic Excellence in 2016</li>
+                            <li>Was a member of the scholars program at the University of Maryland from 2016-2017</li>
+                            
+                        </ul>
+                    <img src="eaglescout.png" id="img4">
+                </div>
+                <div class="snippet" id="snippet">
+                    <p>For more of my work, please visit github.com/dstoner05/important-work, or download my resume using the link to the left.</p>
+                </div>
+            </span>
+            
+
+        </div>  
+    </div>
+
+    <div class="background">
+        <video autoplay muted loop id="myVideo">
+            <source src="background-vid.mp4" type="video/mp4">
+        </video>  
+    </div>
+    
+      
+
+
+
+</body>
+<!-- <script src ="typed.min.js"></script> -->
+<script type="text/javascript">
+    
+    // const typed = new Typed('.typed-strings', {
+    //     typeSpeed: 30
+    // });
+	
+    document.getElementById("myButton").onclick = function () {scroll()};
+
+    function scroll() {
+        document.getElementById("img1").scrollIntoView({behavior:"smooth", block: "end"});   
+    };
+
+    document.getElementById("edubutton").onclick = function () {scroll1()};
+
+    function scroll1() {
+        document.getElementById("edutext").scrollIntoView({behavior:"smooth"});
+    };
+
+    document.getElementById("expbutton").onclick = function () {scroll2()};
+
+    function scroll2() {
+        document.getElementById("work-experience").scrollIntoView({behavior:"smooth"});
+    };
+        
+    document.getElementById("relexpbutton").onclick = function () {scroll3()};
+
+    function scroll3() {
+        document.getElementById("relexperience").scrollIntoView({behavior:"smooth"});
+    };
+
+
+    document.getElementById("refbutton").onclick = function () {scroll4()};
+
+    function scroll4() {
+        document.getElementById("references").scrollIntoView({behavior:"smooth"});
+    };
+
+
+    document.getElementById("leadbutton").onclick = function () {scroll5()};
+
+    function scroll5() {
+        document.getElementById("leadership").scrollIntoView({behavior:"smooth"});
+    };
+
+
+    document.getElementById("portfoliobutton").onclick = function () {scroll6()};
+
+    function scroll6() {
+        document.getElementById("snippet").scrollIntoView({behavior:"smooth"});
+    };
+
+    document.getElementById("myButton").onmouseover = function() {mouseOver()};
+    document.getElementById("myButton").onmouseout = function() {mouseOut()};
+
+    document.getElementById("edubutton").onmouseover = function() {mouseOver6()};
+    document.getElementById("edubutton").onmouseout = function() {mouseOut6()};
+
+    document.getElementById("expbutton").onmouseover = function() {mouseOver1()};
+    document.getElementById("expbutton").onmouseout = function() {mouseOut1()};
+
+    document.getElementById("refbutton").onmouseover = function() {mouseOver2()};
+    document.getElementById("refbutton").onmouseout = function() {mouseOut2()};
+
+    document.getElementById("leadbutton").onmouseover = function() {mouseOver3()};
+    document.getElementById("leadbutton").onmouseout = function() {mouseOut3()};
+
+    document.getElementById("relexpbutton").onmouseover = function() {mouseOver4()};
+    document.getElementById("relexpbutton").onmouseout = function() {mouseOut4()};
+
+    document.getElementById("down-button").onmouseover = function() {mouseOver5()};
+    document.getElementById("down-button").onmouseout = function() {mouseOut5()};
+
+    document.getElementById("portfoliobutton").onmouseover = function() {mouseOver7()};
+    document.getElementById("portfoliobutton").onmouseout = function() {mouseOut7()};
+
+    function mouseOver() {
+        document.getElementById('myButton').style.color = "#a0c2fa";
+    }
+    function mouseOut() {
+        document.getElementById('myButton').style.color = "white";
+    }
+
+    function mouseOver6() {
+        document.getElementById('edubutton').style.color = "#a0c2fa";
+    }
+    function mouseOut6() {
+        document.getElementById('edubutton').style.color = "white";
+    }
+
+    function mouseOver1() {
+        document.getElementById('expbutton').style.color = "#a0c2fa";
+    }
+    function mouseOut1() {
+        document.getElementById('expbutton').style.color = "white";
+    }
+
+    function mouseOver2() {
+        document.getElementById('refbutton').style.color = "#a0c2fa";
+    }
+    function mouseOut2() {
+        document.getElementById('refbutton').style.color = "white";
+    }
+
+    function mouseOver3() {
+        document.getElementById('leadbutton').style.color = "#a0c2fa";
+    }
+    function mouseOut3() {
+        document.getElementById('leadbutton').style.color = "white";
+    }
+
+    function mouseOver4() {
+        document.getElementById('relexpbutton').style.color = "#a0c2fa";
+    }
+    function mouseOut4() {
+        document.getElementById('relexpbutton').style.color = "white";
+    }
+
+    function mouseOver5() {
+        document.getElementById('down-button').style.color = "#a0c2fa";
+    }
+    function mouseOut5() {
+        document.getElementById('down-button').style.color = "white";
+    }
+
+    function mouseOver7() {
+        document.getElementById('portfoliobutton').style.color = "#a0c2fa";
+    }
+    function mouseOut7() {
+        document.getElementById('portfoliobutton').style.color = "white";
+    }
+    </script>
+	
+
+</script>
+</html>
